@@ -1,6 +1,28 @@
 # node files
-dist
 node_modules
+
+# Build output (generated on npm build, included in npm package via package.json "files" field)
+dist
+
+# Lock files (keep package-lock.json for development, ignore others)
+bun.lock
+yarn.lock
+pnpm-lock.yaml
+
+# Example app (for development/testing only, not published)
+example-app/android/build
+example-app/android/.gradle
+example-app/ios/Pods
+example-app/ios/Podfile.lock
+example-app/ios/App/App.xcworkspace/xcuserdata
+example-app/ios/App/App.xcworkspace/xcshareddata
+example-app/node_modules
+
+# IDE files
+.vscode/
+*.swp
+*.swo
+*~
 
 # iOS files
 Pods
